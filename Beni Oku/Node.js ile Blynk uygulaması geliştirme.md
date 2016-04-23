@@ -49,7 +49,7 @@ else
   Gpio = require('onoff').Gpio;  
 }
 
-var AUTH = 'ff7f0bca48214a8fafef39ca27c0d637';
+var AUTH = 'AUTH CODE';
 var outpin = new Gpio(26, 'out');
 var blynk = new Blynk.Blynk(AUTH);
 
