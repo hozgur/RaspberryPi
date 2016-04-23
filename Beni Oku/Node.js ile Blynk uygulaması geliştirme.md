@@ -31,4 +31,8 @@ v9.on('read', function() {
   v9.write(new Date().getSeconds());
 });
 ```
+Bu program çalıştırıldığında haberleşme görülebilir.
+
+Şimdi hardware pinleri kontrol edelim. Öncelikle Pin Diagramına ihtiyacımız var. Benim kullandığım RaspberryPi 2'nin pin diagramı şekildeki gibidir.
+![alt text](./images/RP2_Pinout.png "Raspberry Pi2 Pins")
 
