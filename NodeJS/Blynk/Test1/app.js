@@ -24,7 +24,7 @@ var v9 = new blynk.VirtualPin(9);
 v1.on('write', function(param)
 {
   console.log('V1:', param[0]);
-  outpin.writeSync(param[0]);
+  outpin.writeSync(ParseInt(param[0]));
 });
 v9.on('read', function() {
   v9.write(new Date().getSeconds());
