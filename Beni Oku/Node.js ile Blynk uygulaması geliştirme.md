@@ -34,7 +34,7 @@ v9.on('read', function() {
 Bu program çalıştırıldığında haberleşme görülebilir.
 
 Şimdi hardware pinleri kontrol edelim. Öncelikle Pin Diagramına ihtiyacımız var. Benim kullandığım RaspberryPi 2'nin pin diagramı şekildeki gibidir.
-![alt text](./images/RP2_Pinout.png "Raspberry Pi2 Pins")
+![Rasp 2 Pins](RaspberryPi/Beni Oku/Images/RP2_Pinout.png)
 
 ```
 var Blynk = require('blynk-library');
