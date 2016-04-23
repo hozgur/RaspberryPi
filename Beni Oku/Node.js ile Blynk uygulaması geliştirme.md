@@ -14,7 +14,7 @@ sudo npm install -g blynk-library
 İlk iki komut daha önce nodejs'i güncellediğimiz için gerekmeyecektir ama yine de yazdım. Tekrar çağırmakta sıkıntı yok
 ardından
 aşağıdaki test kodu ile deneme yapabiliriz.
-```
+```javascript
 var Blynk = require('blynk-library');
 
 var AUTH = 'AUTH-CODE';
@@ -36,7 +36,7 @@ Bu program çalıştırıldığında haberleşme görülebilir.
 Şimdi hardware pinleri kontrol edelim. Öncelikle Pin Diagramına ihtiyacımız var. Benim kullandığım RaspberryPi 2'nin pin diagramı şekildeki gibidir.
 ![Rasp 2 Pins](Images/RP2_Pinout.png)
 
-```
+```javascript
 var Blynk = require('blynk-library');
 var os = require('os');
 var Gpio;
@@ -69,7 +69,7 @@ Bu örnekte GPIO kütüphanesini kullanarak dijital pin açık kapatmayı başar
 Bu Örnekte ek olarak Windows ortamında GPIO kütüphanesi çalıştırlamayacağı için fake bir gpio kütüphanesi yazıldı. os.platform() komutu ile eğer işletim sistemi windows ise o nesnenin kullanılması sağlandı.
 
 Onun için de aşağıdaki içeriği görülen mockGPIO.js dosyası aynı dizinde kullanıldı.
-```
+```javascript
 "use strict";
 class MockGPIO
 {
