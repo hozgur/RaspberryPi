@@ -18,5 +18,5 @@ Daha önce **github.com** sistesinde oluşturduğumuz bir projeyi şimdi kendimi
 ```
 git clone https://github.com/user/project
 ```
-komutu ile projeyi kendi dizinimize almış oluruz. Örneğin benim yarattığım RaspberryPi klasörü
+komutu ile projeyi kendi dizinimize almış oluruz.
  
