@@ -12,3 +12,23 @@ sudo npm install -g onoff
 sudo npm install -g blynk-library
 ```
 İlk iki komut daha önce nodejs'i güncellediğimiz için gerekmeyecektir ama yine de yazdım. Tekrar çağırmakta sıkıntı yok
+ardından
+aşağıdaki test kodu ile deneme yapabiliriz.
+```
+var Blynk = require('blynk-library');
+
+var AUTH = 'AUTH-CODE';
+
+var blynk = new Blynk.Blynk(AUTH);
+
+var v1 = new blynk.VirtualPin(1);
+var v9 = new blynk.VirtualPin(9);
+
+v1.on('write', function(param) {
+  console.log('V1:', param[0]);
+});
+v9.on('read', function() {
+  v9.write(new Date().getSeconds());
+});
+```
+
