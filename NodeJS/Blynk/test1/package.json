@@ -4,8 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
-    "blynk-library": "^0.0.30",
-    "onoff": "^1.0.4"
+    "blynk-library": "^0.0.30"
   },
   "devDependencies": {},
   "scripts": {
