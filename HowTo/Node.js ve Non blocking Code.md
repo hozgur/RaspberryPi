@@ -1,6 +1,6 @@
 #Node.js ve Non-Blocking Code
 Node.js single thread çalışan bir uygulama alt yapısıdır.
-non-blocking Fonksiyonlar **fonksiyon(param,callback)** şeklinde bir yapıya sahiptirler. fonksiyon çağrıldıktan çok kısa süre sonra döner. asıl uzun işlem tamamlandığında da callback fonksiyonun çağırır. callback javascript ya da NodeJs'e ait özel bir yapı değildir. sadece bir notasyon kullanım şeklidir.
+non-blocking Fonksiyonlar **fonksiyon(param,callback)** şeklinde bir yapıya sahiptirler. fonksiyon çağrıldıktan çok kısa süre sonra döner. asıl uzun işlem tamamlandığında da callback fonksiyonun çağırır. callback javascript ya da NodeJs'e ait özel bir yapı değildir. sadece bir notasyon kullanım şeklidir. Callback'ler hakkında çok güzel bir site (ingilizce) : http://callbackhell.com/
 ##Peki işlem arkaplan da nasıl yapılır?
 NodeJS yada Javascript multithreading bir alt yapı sunmaz. Tüm işlemler tek thread üzeründe gerçekleşir. MultiThreading işlemlerin yazılımcı tarafından özel olarak yönetilmesi gerekir. Bunun ile ilgili task sistemi kullanılabilir.
 ## Peki Bu durumda NodeJS bu işi nasıl halleder?
